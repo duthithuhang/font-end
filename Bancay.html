@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bancay</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         @import url("https://fonts.google.com/specimen/Slabo+27px/");
+         *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        .header{ 
+            width: 100%;
+            text-align: center;
+            float:left;
+            background-color:rgb(26, 112, 51);
+        } 
+        .header-left,.header-right,.header-content{
+            float: left;
+        }
+        .header-left{
+            position: relative;
+            width:25%;
+
+        }
+        .heeder-content{
+            width:50%;
+        }
+        .header-logo-icon{
+            position: absolute;
+            top:5px;
+            right:10px;
+        }
+       .header li a{
+           color: black; 
+       }
+       .header li a:hover{
+           color: green;
+       }
+
+       .header-right{
+           width:25%;
+           position: relative;
+           float:right;
+       }
+       .header-right-icon{
+           position: absolute;
+           top:5px;
+       }
+       .header-content-item{
+           float:left;
+       }
+       .clearfix::after{
+           clear: both;
+           content: " ";
+           display: block;
+
+       }
+       .header-content-item{
+           padding:10px;
+           border-right: 1px solid black;
+       }
+       .header-content-item:nth-of-type(4){
+        margin-right: 100px;
+    }
+    .header-right-content{
+        position: relative;
+        text-align: left;
+    }
+    
+  .header-right-icon{
+      float: left;
+      position: absolute;
+      left:-45px;
+      top:45px;
+      
+  }
+  .img{
+      position: absolute;
+      left:500px;    
+  }
+  .number{
+      position: relative;
+      text-align: center;
+  }
+
+  .menu{
+      background-color: rgb(23, 175, 86);
+      float: left;
+      width: 100%;
+      height: 100px;
+  }
+  .menu-item{
+      color: black;
+  }
+  .item-child{
+      float: left;
+      padding: 20px 70px;
+  }
+  
+  .hinhanh{
+      float:left;
+      width: 100%;
+      height: 500px;
+      background-color:white;
+     
+  }
+  .anh{
+      text-align: center;
+      padding: 30px;
+      
+  }
+  .h2{
+      text-align: center;
+      padding-right: 30px;
+  }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <div class="header" class="clearfix">
+        <div class="header-left">
+           
+            <div class="header-logo-language">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMQazJpo5vLxXyp3OxrTL1By4TBje0lmkAgHTQYXtS4WOo2BUgjw&s" height="80px" width="100px">
+                <h3>PlanShop</h3>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="header-content-top" class="clearfix">
+                <ul class="clearfix">
+                    <li class="header-content-item" >
+                        <a class="item active" herf="#">Sales</a>
+                    </li>
+                    <li class="header-content-item">
+                        <a class="item active" herf="#">Help</a>
+                    </li>
+                    <li class="header-content-item">
+                        <a class="item active" herf="#">About</a>
+                    </li>
+                    <li class="header-content-item">
+                         <a class="item active" herf="#">Contact</a>
+                    </li>
+                    <li class="header-content-item">
+                        <a class="item active" herf="#">Login</a>
+                    </li>
+                    <li class="header-content-item">
+                         <a class="item active" herf="#">Register</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="hearder-content-bottom"class="clearfix">
+                <div class="img">
+                    <i class="fa fa-volume-down" style="font-size: 24px"></i>
+                </div>
+                
+                <div class="number">
+                    <p>123 456 7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-right" class="clearfix">
+            <div class="header-right-icon" >
+                <i class="fa fa-car" style="font-size:24px"></i>
+            </div>
+            <div class="header-right-content">
+               <h3>Shopping Cart</h3>
+               <h5>Items</h5>
+               <h5>Amount</h5>
+            </div>
+        </div>
+    </div>
+    <!--menu-->
+    <div class="menu">
+        <div class="menu-item">
+            <ul>
+                <li class="item-child">
+                    <a class="clild" heft="#">Home</a>
+                </li>
+                
+                <li class="item-child">
+                        <a class="clild" heft="#">Flower Bulbs</a>
+                    </li>
+                    
+                <li class="item-child">
+                        <a class="clild" heft="#">Trees&Shrubs</a>
+                    </li>
+                    
+                <li class="item-child">
+                        <a class="clild" heft="#">Plants</a>
+                    </li>
+                    
+                <li class="item-child">
+                        <a class="clild" heft="#">Accessories</a>
+                    </li>
+                    
+                <li class="item-child">
+                        <a class="clild" heft="#">Specials</a>
+                    </li>   
+            </ul>
+        </div>
+    </div>
+    <!--img-->
+    <div class="hinhanh">
+        <div class="anh">
+            <img src="https://i.9mobi.vn/cf/images/2015/03/nkk/hinh-dep-15.jpg"
+            height="350px" width="90%">
+         </div>
+    <h2>Popular Products</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+                <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://photo-1-baomoi.zadn.vn/w1000_r1/2019_02_24_180_29760975/6e0a864e010fe851b11e.jpg">
+                            <div class="card-body">
+                              <h4 class="card-title">DONEC CONGUE</h4>
+                              <p class="card-text">Future depends on your dreams. So go to sleep.</p>
+                              <h3>2.34$</h3>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://photo-1-baomoi.zadn.vn/w1000_r1/2019_02_24_180_29760975/6e0a864e010fe851b11e.jpg">
+                                <div class="card-body">
+                                  <h4 class="card-title">DONEC CONGUE</h4>
+                                  <p class="card-text">Future depends on your dreams. So go to sleep.</p>
+                                  <h3>2.34$</h3>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://photo-1-baomoi.zadn.vn/w1000_r1/2019_02_24_180_29760975/6e0a864e010fe851b11e.jpg">
+                                    <div class="card-body">
+                                      <h4 class="card-title">DONEC CONGUE</h4>
+                                      <p class="card-text">Future depends on your dreams. So go to sleep.</p>
+                                      <h3>2.34$</h3>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://photo-1-baomoi.zadn.vn/w1000_r1/2019_02_24_180_29760975/6e0a864e010fe851b11e.jpg">
+                                        <div class="card-body">
+                                          <h4 class="card-title">DONEC CONGUE</h4>
+                                          <p class="card-text">Future depends on your dreams. So go to sleep.</p>
+                                          <h3>2.34$</h3>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                        <div class="card">
+                                            <img src="https://photo-1-baomoi.zadn.vn/w1000_r1/2019_02_24_180_29760975/6e0a864e010fe851b11e.jpg">
+                                            <div class="card-body">
+                                              <h4 class="card-title">DONEC CONGUE</h4>
+                                              <p class="card-text">Future depends on your dreams. So go to sleep.</p>
+                                              <h3>2.34$</h3>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="https://photo-1-baomoi.zadn.vn/w1000_r1/2019_02_24_180_29760975/6e0a864e010fe851b11e.jpg">
+                                                <div class="card-body">
+                                                  <h4 class="card-title">DONEC CONGUE</h4>
+                                                  <p class="card-text">Future depends on your dreams. So go to sleep.</p>
+                                                  <h3>2.34$</h3>
+                                                </div>
+                                              </div>
+                                          </div>
+
+        </div>
+    </div>
+
+   
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

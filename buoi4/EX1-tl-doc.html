@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .ul{
+            list-style-type: none;
+            text-align: left;
+        }
+        .container{
+            width: 100%;
+            margin: 30px;
+        }
+        .menu-item{
+            position: relative;
+            width:20%;
+            padding: 30px 20px;
+        
+
+        }
+        .menu-item a{
+            background-color: black;
+            color: white;
+            display: inline-block;
+        }
+        .sub-menu{
+            position: absolute;
+            display: none;
+            left:100px;
+            top:50px;
+        }
+        .menu-item:hover .sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="menu">
+            <ul>
+                <li class="menu-item">
+                    <a style="cursor: pointer">Menu1</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu_item"><a>nội dung 1</a></li>
+                        <li class="sub-menu_item"><a>nội dung 2</a></li>
+                        <li class="sub-menu_item"><a>nội dung 3</a></li>
+                        <li class="sub-menu_item"><a>nội dung 4</a></li>
+                        <li class="sub-menu_item"><a>nội dung 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a style="cursor: pointer">Menu2</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu_item"><a>nội dung 1</a></li>
+                        <li class="sub-menu_item"><a>nội dung 2</a></li>
+                        <li class="sub-menu_item"><a>nội dung 3</a></li>
+                        <li class="sub-menu_item"><a>nội dung 4</a></li>
+                        <li class="sub-menu_item"><a>nội dung 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a style="cursor: pointer">Menu3</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu_item"><a>nội dung 1</a></li>
+                        <li class="sub-menu_item"><a>nội dung 2</a></li>
+                        <li class="sub-menu_item"><a>nội dung 3</a></li>
+                        <li class="sub-menu_item"><a>nội dung 4</a></li>
+                        <li class="sub-menu_item"><a>nội dung 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

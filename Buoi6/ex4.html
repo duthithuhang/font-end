@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 1000px;
+            background-color: darkslategrey;
+            text-align: center;
+        }
+        .header{
+            background-color: antiquewhite;
+            height: 200px;
+        }
+        .content{
+            height: 400px;
+            background-color: pink;
+        }
+        .content-right{
+            height: 400px;
+            background-color: aqua;
+            width: 30%;
+        }
+        .content-left{
+            float:left;
+            background-color: blue;
+            height: 400px;
+            width: 70%;
+        }
+        .asr{
+            background-color: brown;
+            margin: 40px 30px 40px 30px;
+            height: 200px;
+            float:left;
+        }
+        .clearfix::after{
+            clear: both;
+            display:block;
+            content:"";
+        }
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> header</div>
+        <div class="content" class="clearfix">
+            <div class="content-left">
+                <div class="ars"></div>
+            </div>
+            <div class="content-right"></div>
+        </div>
+        <div class="nav"></div>
+        <div class="bottom">
+            <div class="bottom-item"></div>
+        </div>
+    </div>
+</body>
+</html>

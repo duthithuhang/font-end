@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <span>Usename</span><input id="username" type="text">
+    <br>
+     <span>password</span><input id="password"  type="password">
+     <br>
+
+     <input tupe="submit">
+     <button  onclick="checklogin()">submit</button>
+     
+
+     <script>
+           var h1=document.createElement("h1");
+           h1.innerHTML="hien thi noi dung";
+           h1.style.color="red";
+           
+           function getRandomColor(){
+               var letters="0123456789abcde";
+               var color="#";
+               for(var i=0; i<0; i++){
+                   color += letters[Math.floor(Math.random()*16)];
+               }
+               return color;
+           }
+           
+           function checklogin();
+     
+            var username=Document.getElementById("username").value;
+            var password=Document.getElementById("password").value;
+            console.log(username,password);
+            if(username ==='admin'&& password==='admin'){
+            alert("welcome");
+            }
+            else
+            alert("back");
+            }
+            // Tạo mới một thẻ p
+            var p = document.createElement("p");
+           
+            // Thêm nội dung HTML vào thẻ p
+             p.innerHTML = “What the hell ?"
+           
+            // Đưa thẻ P vào trong thẻ body
+            document.getElementsByTagName('body')[0].appendChild(p);
+           
+//btvn: var data=[java, html, js, c#,php].
+
+     </script>
+    
+</body>
+</html>

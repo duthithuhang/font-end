@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+       *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        .clearfix::after{
+           clear: both;
+           content: " ";
+           display: block;
+        }
+        .menu1{
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            float:left;
+        }
+        .menu1-left{
+            width:70%;
+            float:left;
+            height:40px;
+        }
+        .menu1-left-content1{
+            float: right;
+            height:30px;
+            display: block;
+            margin-top: 4px;
+            margin-right: 100px;
+        }
+        .menu1-left-content1-right{
+            display: block;
+            float: left;
+            margin-left: 5px;
+        }
+        .menu1-left-content1-left{
+            display: block;
+            float:left;
+        }
+        .menu1-right{
+            width: 30%;
+            float:left;
+            height:40px;
+        }
+        .menu1-right-seach{
+            float:left;
+            width: 250px;
+            height:35px;
+            float:left;
+            margin-left: 100px;
+            margin-top: 6px;
+        }
+        input[type="text"] {
+            width: 230px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 3px;
+            outline:none;
+            padding: 0px 4px;
+        }
+        input[type="text"]:focus{
+            width:240px; 
+        }
+        .logo1{
+            background-color: white;
+            width: 100%;
+            height:250px;
+            float:left;
+        }
+        .logo1-content{
+            float:left;
+            margin-top: 85px;
+            margin-left: 430px;
+            display: block; 
+        }
+       .menu2{
+           width: 100%;
+           height:150px;
+           float:left;
+       }
+       .menu2-left{
+           width: 15%;
+           height:200px;
+           float:left;
+       }
+       .menu2-center{
+           width:70%;
+           height:200px;
+           float:left;
+       }
+       .menu2-right{
+           width:15%;
+           height:200px;
+           float:left;
+       }
+       a{
+           font-size: 20px;
+           font-weight:bold;
+       }
+       .menu2-center-item{
+           float:left;
+           position: relative;
+       }
+       .sub-menu2{
+           top:50px;
+           position: absolute;
+           display: none;
+           background-color: black;
+           width:200px;
+           height: 100px;
+
+       }
+       .sub-menu2-item{
+           color: white;
+       }
+       .menu2-center-item:hover .sub-menu2{
+            display: block;
+        }
+        .menu2-center-item:nth-of-type(1){
+            margin-left:10px;
+        }
+        .menu2-center-item:nth-of-type(2){
+            margin-left:60px;
+        }
+        .menu2-center-item:nth-of-type(3){
+            margin-left:60px;
+        }
+        .menu2-center-item:nth-of-type(4){
+            margin-left:85px;
+        }
+    </style>
+</head>
+<body>
+    <!--menu1-->
+    <div class="menu1">
+        <div class="menu1-left">
+            <div class="menu1-left-content1" class="clearfix">
+                <div class="menu1-left-content1-left" class="clearfix">
+                    <h4 style="color: yellow">Khuyến Mãi 20%</h4>
+                </div>
+                <div class=" menu1-left-content1-right" class="clearfix">
+                    <h4 style="color: white">đến hết ngày 17/11</h4>
+                </div>
+            </div>
+        </div>
+        <div class="menu1-right" class="clearfix">
+            <div class="menu1-right-seach">
+                
+                    <form>
+                            <input type="text" name="search" placeholder="Tìm kiếm điện thoại..." style="background-color:#E7EAED">
+                    </form>
+                
+            </div>
+        </div>
+    </div>
+    <!--logo1-->
+    <div class="logo1" class="clearfix">
+        <div class="logo1-content" >
+                <img src="https://hatocase.com/wp-content/uploads/2018/08/logo-HATO-Case-official-highpx.png" 
+                height="70px" width="470px">
+        </div>
+       
+    </div>
+    <!--menu2-->
+    <div class="menu2">
+        <div class="menu2-left"></div>
+        <div class="menu2-center" class="clearfix">
+            <ul>
+                <li class="menu2-center-item">
+                    <a> Nhờ Hato thiết kế</a>
+                </li>
+                
+                <li class="menu2-center-item">
+                    <a> Tự tay thiết kế</a>
+                </li>
+                    
+                <li class="menu2-center-item">
+                    <a style="cursor: pointer">Bộ sưu tập nổi bật</a>
+                    <ul class="sub-menu2">
+                        <li class="sub-menu2-item">ỐP lưng in tên</li>
+                        <li class="sub-menu2-item">ỐP lưng couple</li>
+                        <li class="sub-menu2-item">ỐP lưng hoa lá</li>
+                        <li class="sub-menu2-item">ỐP lưng câu nói hay</li>
+                    </ul>
+                </li>
+                    
+                <li class="menu2-center-item">
+                    <a> Dành cho doanh nghiệp</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu2-right" class="clearfix">
+        </div>
+        
+    </div>
+    <!--menu3-->
+    <div class="menu3">
+        <div class="menu3">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

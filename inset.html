@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+    @import url("https://fonts.google.com/specimen/Slabo+27px/");
+.navbar{
+    background-color: rgba(82,64,120,0.9)!important;
+}
+.navbar li a{
+    color: white !important;
+}
+.navbar li a:hover{
+    color:black!important;
+}
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+.carousel-inner img{
+    width: 100%;
+}
+.carousel-caption{
+    position: absolute;
+    top:50%;
+}
+.carousel-caption h1{
+    font-size:400%;
+    text-transform:uppercase;
+    text-shadow: 5px 5px 15px #000;
+}
+.carousel-caption h3{
+    font-size:200%;
+    text-shadow: 2px 2px 10px #000;
+}
+.btn-primary{
+    background-color: rgb(82, 62,120);
+    border: 1px solid white;
+}
+.btn-primary:hover{
+    background-color: rgb(82, 62,120);
+    border: 1px solid white;
+}
+@media(max-width: 992px){
+    .carousel-caption{
+   
+    top:20%;
+}
+.carousel-caption h1{
+    font-size:250%;
+   
+    
+}
+.carousel-caption h3{
+    font-size:160%;
+    
+}
+.carousel-caption.btn{
+    font-size: 120%;
+}
+}
+@media(max-width: 768px){
+    .carousel-caption{
+   
+   top:20%;
+}
+.carousel-caption h1{
+   font-size:220%;
+  
+   
+}
+.carousel-caption h3{
+   font-size:140%;
+   padding-bottom: 0.2rem;
+   
+}
+.carousel-caption.btn{
+   font-size: 95%;
+   padding: 8px 14px;
+}
+}
+@media(max-width: 576px){
+    .carousel-caption{
+   
+   top:10%;
+}
+.carousel-caption h1{
+   font-size:150%;
+  
+   
+}
+.carousel-caption h3{
+   font-size:110%;
+   
+   
+}
+.carousel-caption.btn{
+   font-size: 90%;
+   padding: 4px 8px;
+}
+
+}
+.jumbotron{
+    padding: 1rem;
+    border-radius: 0;
+}
+.welcome hr{
+    border-top:2px solid rgba(62,44,100, 0.6);
+    width:95%;
+    margin-bottom:2rem;
+
+}
+.fa-react{
+    color: #000;
+    font-size: 4em;
+    margin: 1rem;
+
+}
+</style>
+
+
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-branch" href="#">
+                <img src="data:image/png;base64,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"height="100px" width=100%>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggler="collapse"
+            data-tager="#navbarResponsive">
+            <span class="navbar-toggler-icon">
+
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link active" herf="#">Home</a>
+                </li> 
+                <li class="nav-item">
+                        <a class="nav-link active" herf="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link active" herf="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link active" herf="#">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link active" herf="#">Connect</a>
+                                </li> 
+            
+             </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!--carousel-->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-tager="#slides" data-tager-to="0" class="active"></li>
+            <li data-tager="#slides" data-tager-to="1" ></li>
+            <li data-tager="#slides" data-tager-to="2" ></li>
+            <li data-tager="#slides" data-tager-to="3" ></li>
+
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXCMbJmA8NvQ1xXtNOiI3_DeQmPHlqlnuESkOyIirtFhi9Tb1b">
+                <div class="carousel-caption">
+                    <h1 class="display-2">NINHBINH</h1>
+                    <h3>Autolayout with bootstrap</h3>
+                    <botton type="botton" class="btn btn-outline-light btn-lg">VIEW TUTORIALS</botton>
+                    <botton type="botton" class="btn btn-primary btn-lg">Get Started</botton>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLdoWjrGL2D2cI59m8ZkOXAiaFu6VNQ27Jd1VGWKpbpEthCgsZ">
+            </div>
+            <div class="carousel-item ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Wew2a_o_ChKoSc8v6YSHuthbMK121NvuGTZRa7nBcbAXH5Yb">
+            </div>
+            <div class="carousel-item ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFox7a93T5EWkyQ_hEZJcUjVhbnDq3-_rm6HRiJseKqBVQexd3">
+            </div>
+        </div>
+    </div>
+    <!--jumbotron-->
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="col-sx-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p>Ninh Bình là một thành phố tỉnh lỵ, trung tâm chính trị, kinh tế, văn hóa, khoa học và du lịch của tỉnh Ninh Bình, Việt Nam.</p>
+            </div>
+            <div class="col-sx-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#">
+                    <botton type="botton"class="btn btn-outline-secondary">buy a host</botton>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Nhiều danh thắng đẹp cả về cảnh quan và ý nghĩa lịch sử</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p>Tháng 3 - tháng 9: thời gian đẹp nhất để du lịch Ninh Bình
+                   Tháng 4 -  tháng 5, tháng 9 - tháng 10: mùa lúa chín vàng óng ả ở Tam Cốc
+                   Tháng 6: mùa hoa sen, hoa súng nở rộ ở Tràng An
+                   Tháng 11 - tháng 3 (âm lịch): thường có mưa phùn, thời tiết khá xấu, du khách nên hạn chế đến vào thời gian này. Đây cũng là mùa cao điểm du lịch Ninh Bình, rất đông du khách đổ về đây tham quan, lễ bái nên thường xảy ra tình trạng quá tải, chen lấn xô đẩy tại các điểm mua, soát vé và các bến thuyền, cần cảnh giác đề phòng trộm cắp, móc túi.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-sx-12 col-sm-6 col-md-4">
+              <i class="fab fa-react"></i>
+              <h3>DULICH</h3>
+                <p>Du Lịch Bái Đính Tràng An</p>
+            </div>
+            <div class="col-sx-12 col-sm-6 col-md-4">
+                    <i class="fab fa-react"></i>
+                    <h3>AMTHUC</h3>
+                    <p>Du Lịch Bái Đính Tràng An</p>
+            </div>
+             <div class=" col-sm-12 col-md-4">
+                        <i class="fab fa-react"></i>
+                        <h3>NGHIDUONG</h3>
+                        <p>Du Lịch Bái Đính Tràng An</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>NGỒI ĐÒ THĂM TRÀNG AN</h2>
+                <p> quý khách đến thăm Tràng An lên thuyền quanh các rừng nguyên sinh và rừng lau đi qua các hang chính với những cái tên rất lạ như hang Sáng, hang Tối, hang Nấu Rượu… du khách sẽ được nếm trải cảm giác hồi hộp khi thuyền tiến vào lòng hang sâu thẳm, chiêm ngưỡng hình thù kỳ lạ của những nhũ đá trong hang và hòa mình vào khung cảnh thiên nhiên nơi đây.Và đặc biệt quý khách thăm ba điểm di tích :Đền Trình,Đền Trần ,và Phủ Khổng</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://dulichsinhcafe.com.vn/wp-content/uploads/2017/11/ta1.jpg" height="400px " >
+            </div>
+        </div>
+    </div>
+   <div class="container-fluid padding">
+       <div class="row text-center padding">
+         <div class="col-12">
+             <h2>Thank You</h2>
+         </div>
+         <div class="col-12 social padding">
+             <a href="#"><i class="fab fa-facebook"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-youtobe"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+         </div>
+       </div>
+       
+   </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

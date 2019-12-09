@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+       .ul{
+           list-style-type: none;
+           text-align: left;
+       }
+       .menu-item{
+           position: relative;
+           width:10%;
+           height:50px;
+           background-color: aquamarine;
+
+
+       }
+       .menu-item-a{
+            display: inline-block;
+            padding: 10px 40px;
+            color: black;
+       }
+       .sub-menu{
+           padding: 10px 20px;
+           position: absolute;
+           display: none;
+           left:250px;
+       }
+       .menu-item:hover .sub-menu{
+            display:block;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li class=" menu-item">
+                <a style="cursor: pointer">menu1</a>
+                <ul class="sub-menu">
+                    <li class="sub-menu_item"><a>noidung1</a></li>
+                    <li class="sub-menu_item"><a>noidung2</a></li>
+                    <li class="sub-menu_item"><a>noidung3</a></li>
+                    <li class="sub-menu_item"><a>noidung4</a></li>
+                    <li class="sub-menu_item"><a>noidung5</a></li>
+                </ul>
+                
+            </li>
+            <li class=" menu-item">
+                    <a style="cursor: pointer">menu2</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu_item">noidung1</li>
+                        <li class="sub-menu_item">noidung2</li>
+                        <li class="sub-menu_item">noidung3</li>
+                        <li class="sub-menu_item">noidung4</li>
+                        <li class="sub-menu_item">noidung5</li>
+                    </ul>
+                    
+                </li>
+                <li class=" menu-item">
+                        <a style="cursor: pointer">menu3</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu_item">noidung1</li>
+                            <li class="sub-menu_item">noidung2</li>
+                            <li class="sub-menu_item">noidung3</li>
+                            <li class="sub-menu_item">noidung4</li>
+                            <li class="sub-menu_item">noidung5</li>
+                        </ul>
+                        
+                    </li>
+                    <li class=" menu-item">
+                            <a style="cursor: pointer">menu4</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">noidung1</li>
+                                <li class="sub-menu_item">noidung2</li>
+                                <li class="sub-menu_item">noidung3</li>
+                                <li class="sub-menu_item">noidung4</li>
+                                <li class="sub-menu_item">noidung5</li>
+                            </ul>
+                            
+                        </li>
+            
+            
+        </ul>
+    </div>
+</body>
+</html>

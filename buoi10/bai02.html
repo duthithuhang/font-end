@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    var Student = {
+        data : [],
+        viewStudent : function(){
+            // Lấy danh sách sinh viên
+            var listStudent = this.data;
+
+            // Lặp và hiển thị sinh viên
+            for(var i = 0; i < listStudent.length; i++){
+                document.write("<div>" + listStudent[i].id + "|" + listStudent[i].name + "|" + listStudent[i].email + "</div>");
+            }
+        },
+        addStudent : function(id, name, email){
+            // Tạo thông tin sinh viên
+            var item = {
+                id : id,
+                name : name,
+                email : email
+            };
+
+            //Thêm sinh viên
+            this.data.push(item);
+        },
+        removeStudent : function(id){
+            // Lặp qua sinh viên để tìm kiếm và xóa
+            for(var i = 0; i < this.data.length; i++){
+                if (this.data[i].id === id) { // nếu là sinh viên cần xóa
+                    this.data.splice(i, 1); // thì xóa
+                }
+            }
+        },
+        editStudent : function(id, name, email){
+            // Tìm sinh viên cần edit
+            for(var i = 0; i < this.data.length; i++){
+                // nếu là sinh viên cần edit thì thực hiện edit
+                if (this.data[i].id === id) { 
+                    this.data[i].name = name;
+                    this.data[i].email = email;
+                }
+            }
+        }
+    };
+    Student.data = [{
+            id:1,
+            name:"hang",
+            email:"wertyu@gmail.com"
+        },{
+            id:2,
+            name:"thu",
+            email:"rtuf@gmail.com"
+        },{
+            id:3,
+            name:"huy",
+            email:"hghidi@gmail.com"
+        }];
+
+    document.write("danh sách sinh viên la:");
+    Student.viewStudent();
+    document.write("danh sách sau khi thêm hai sinh vien la:");
+    Student.addStudent("4", 'my', "uehdh@gmail.com");
+    Student.addStudent("5", 'nguyet', "shsihsis@gmail.com");
+    Student.viewStudent();
+
+    document.write('Danh sách sinh viên sau khi xóa một sinh viên la:');
+    Student.removeStudent("1");
+    Student.viewStudent();
+
+    document.write('Danh sách sinh viên sau khi sửa thông tin là:');
+    Student.editStudent('3', "namenew", "new@gmail.com");
+    Student.viewStudent();
+    
+///
+<script>
+        var a=("123124356");
+        var count=(a.match(/4/g)||[]).length;
+         console.log(count); 
+        var count=(a.match(/1/g)||[]).length; 
+        console.log(count); 
+        ///
+
+
+        var str="test string";
+        console.log(str.length);
+        console.log(str.toUpperCase());
+        console.log(str);
+        var   // du lieu se xd trong luc runtime. null là được khai báo giá trị,undifile: là chưa được khai báo giá trị.
+        
+
+    </script>
+        
+        </script>
+        
+</body>
+</html>
